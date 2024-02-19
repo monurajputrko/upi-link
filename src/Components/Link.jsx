@@ -1,45 +1,40 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Context/CreateContext";
 import QRCode from "qrcode.react";
-import './Link.css'
+import "./Link.css";
 
 const LinkExtractor = () => {
-const { formData, setFormData } = useContext(AuthContext);
+  const { formData, setFormData } = useContext(AuthContext);
   const recipient1 = formData.upi;
   const amount1 = formData.amount;
+
   // Get the URL parameters
   const urlParams = new URLSearchParams(window.location.search);
 
   // Get the recipient UPI ID from the URL parameter 'pa'
-  var recipient = urlParams.get("pa");
-  
+  let recipient = urlParams.get("pa");
+
   // Get the amount from the URL parameter 'am'
-  var amount = urlParams.get("am");
+  let amount = urlParams.get("am");
 
-  var sender = urlParams.get("se");
+  let sender = urlParams.get("se");
+  let note = urlParams.get("no");
 
-  var note = urlParams.get("no");
- 
-  console.log(sender, " ", note);
-
-  if (recipient === "" || recipient === null) {
+  if (!recipient) {
     recipient = recipient1;
   }
-  if (amount === "" || amount === null) {
+  if (!amount) {
     amount = amount1;
   }
 
-  console.log(recipient);
-   console.log(amount);
-
-  var [link, setLink] = useState(
+  const [link, setLink] = useState(
     `upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount}`
   );
 
   return (
     <div className="flex items-center justify-center">
       <section className="content pay">
-        <p className=" mt3 ">
+        <p className="mt3">
           Seeing this on PC? <br /> Scan QR Code with any UPI App.
         </p>
         <div
@@ -56,7 +51,7 @@ const { formData, setFormData } = useContext(AuthContext);
         <p className="payingtext">You are paying ₹ {amount}</p>
         <p className="payingtext">to</p>
         <p className="payingtext vpatext">{recipient}</p>
-        {sender !== "" && <p className="payingtext vpatext">({sender})</p> }
+        {/* {sender && <p className="payingtext vpatext">({sender})</p>} */}
 
         <div className="center">
           <a
@@ -68,7 +63,6 @@ const { formData, setFormData } = useContext(AuthContext);
               alt="UPI Icon"
               className="w-4 h-4 mr-2"
             />
-            {/* <!-- Replace the CDN link and alt text with your icon URL and description --> */}
             Pay Now
           </a>
         </div>
