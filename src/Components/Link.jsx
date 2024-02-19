@@ -30,28 +30,33 @@ const { formData, setFormData } = useContext(AuthContext);
 
   console.log(recipient);
    console.log(amount);
-  // console.log("Recipient:", recipient);
-  // console.log("Amount:", amount);
-  // https://upi-link-five.vercel.app/pay?pa=9664366346&am=1000
 
   var [link, setLink] = useState(
     `upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount}`
   );
-  // console.log(link);
-  // const link = "";
+  
   return (
     <div>
-      <div>
-        {/* upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount} */}
-      </div>
+      <div>{/* upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount} */}</div>
       <section className="content pay">
         <p className="computerprompt">
           Seeing this on PC? Scan QR Code with any UPI App.
         </p>
+        <div
+          style={{
+            textAlign: "center",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            borderRadius: "8px",
+            padding: "16px",
+            display: "inline-block",
+          }}
+        >
+          <QRCode value={link} size={256} />
+        </div>
         <p className="payingtext">You are paying ₹ {amount}</p>
         <p className="payingtext">to</p>
         <p className="payingtext vpatext">{recipient}</p>
-        <QRCode value={link} size={256} />
+
         <div className="center">
           <a href={link} target="_blank" rel="noopener noreferrer">
             Go to External Website

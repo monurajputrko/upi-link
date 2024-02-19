@@ -16,7 +16,19 @@ function QRCodeGenerator() {
         onChange={handleChange}
         placeholder="Enter text or URL"
       />
-      {inputData && <QRCode value={inputData} />}
+      {inputData && (
+        <div
+          style={{
+            textAlign: "center",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            borderRadius: "8px",
+            padding: "16px",
+            display: "inline-block",
+          }}
+        >
+          <QRCode value={inputData} size={256} />
+        </div>
+      )}
     </div>
   );
 }
