@@ -33,7 +33,7 @@ const LinkExtractor = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center vh100 ">
         <section className="content pay">
           <p className="mt3">
             Seeing this on PC? <br /> Scan QR Code with any UPI App.
