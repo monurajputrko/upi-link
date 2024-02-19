@@ -42,6 +42,10 @@ img {
     height: auto;
 }
 
+.display-block{
+    display: block;
+}
+
 *,
 ::before,
 ::after {
@@ -186,6 +190,10 @@ img {
 .text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+}
+
+.text-align-center {
+    text-align: center;
 }
 
 .font-medium {

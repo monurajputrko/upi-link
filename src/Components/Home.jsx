@@ -7,8 +7,9 @@ const Home = () => {
       <>
         <div className="grid max-w-screen-xl px-4 pt-0 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            {/* https://ik.imagekit.io/pngserver/hero.png */}
             <img
-              style={{ borderRadius: "3%" , marginBottom:"3%" }}
+              style={{ borderRadius: "3%", marginBottom: "3%" }}
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivcNqCrMXX1-EEd8Jh0P7pjExzrwgVyljPefLTeJmPmgQpn-U6HidyejAzL4lRNRZHaFFkMGZUd_MmUO9mOi00ibLcxQZn_Zz5DVFw_kNdYwMqWm5uppHBPUDp_SpGBz808fQTWjnI1sGhUdC5-lIRPHhp_3aRGy4Ybp20LaQaSvieNoAUq2odVSKmpeAh/s16000/upi%20image.png"
               alt="upi link demo"
             />
@@ -42,6 +43,26 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex items-center justify-center">
+          <h1 className="display-block text-align-center max-w-2xl text-2xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">
+            Why use UPI Payment Links?
+          </h1>
+        </div>
+        <div>
+          <br />
+          <br />
+          <p className="display-block text-4xl font-medium">
+            Get Paid Instantly Without Sharing Your Bank Details.
+          </p>
+        </div>
+        <div className="flex items-center justify-center lg:gap-8">
+          <div>
+            
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </>
     );

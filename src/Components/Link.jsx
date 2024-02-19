@@ -26,6 +26,7 @@ const LinkExtractor = () => {
    console.log(amount);
   // console.log("Recipient:", recipient);
   // console.log("Amount:", amount);
+  // https://upi-link-five.vercel.app/pay?pa=9664366346&am=1000
 
   var [link, setLink] = useState(
     `upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount}`
