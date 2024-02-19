@@ -2,9 +2,9 @@ import React, { useContext, useState } from "react";
 import { AuthContext } from "../Context/CreateContext";
 
 const LinkExtractor = () => {
-  // const { recipient, amount } = useContext(AuthContext);
-  const recipient1 = "ok";
-  const amount1 = "test";
+const { formData, setFormData } = useContext(AuthContext);
+  const recipient1 = formData.upi;
+  const amount1 = formData.amount;
   // Get the URL parameters
   const urlParams = new URLSearchParams(window.location.search);
 
@@ -13,7 +13,12 @@ const LinkExtractor = () => {
   
   // Get the amount from the URL parameter 'am'
   var amount = urlParams.get("am");
+
+  var sender = urlParams.get("se");
+
+  var note = urlParams.get("no");
  
+  console.log(sender, " ", note);
 
   if (recipient === "" || recipient === null) {
     recipient = recipient1;

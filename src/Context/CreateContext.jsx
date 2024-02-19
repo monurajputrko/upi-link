@@ -6,7 +6,12 @@ export const AuthContextProvider = ({ children })=> {
   var [recipient1, setRecipient] = useState("");
   var [amount1, setAmount] = useState("");
   var [link, setLink] = useState("");
-
+    const [formData, setFormData] = useState({
+      name: "",
+      upi: "",
+      amount: "",
+      note: "",
+    });
  useEffect(() => {
    try {
      var urlObject = new URL(window.location.href);
@@ -34,7 +39,7 @@ export const AuthContextProvider = ({ children })=> {
   
 
   return (
-    <AuthContext.Provider value={{ recipient1, amount1, link,setAmount,setRecipient }}>
+    <AuthContext.Provider value={{ recipient1, amount1, link,setAmount,setRecipient,formData,setFormData }}>
       {children}
     </AuthContext.Provider>
   );

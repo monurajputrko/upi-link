@@ -145,6 +145,10 @@ img {
     margin-right: -5%;
 }
 
+.border-2{
+    border: 2px solid black;
+}
+
 .sbox{
     /* border: 2px solid black; */
     padding: 10px;
@@ -223,7 +227,7 @@ img {
 
 .mbox{
     background-color: #E8EDF2;
-    width: 45%;
+    width: 200px;
 }
 
 .transp{

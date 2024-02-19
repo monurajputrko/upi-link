@@ -31,7 +31,7 @@ const Home = () => {
           <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
             <div className="flex">
               <Link
-                to="/pay"
+                to="/form"
                 className="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
               >
                 <img
@@ -114,35 +114,72 @@ const Home = () => {
         </div>
       </div>
       <div className="flex items-center justify-center lg:gap-8 wrap-wrap">
-        <div className="sbox ml mt4 ">
-          <FaRegCreditCard />
+        <div className="sbox ml mt4">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmIvBJZnTOOGK_0d4k6G6GYnAYu9s501wswBto2bKzMOyevOWRWVySgsE_5UaiUwPPP7f0t7lrSbg6IXu15dUcV2q-bOFeciPetkBT_9_4XrMxernzFnI0q1Sc8-bA6s7TgOJEwLH7po8DlO21NhGq14skXnSTpWSa4JRtjWtS7cNYNKIf4_AQjmwugX6P/s1600/testi.png"
+            alt=""
+          />
 
-          <h3 className="display-block mm text-8xl font-extrabold ">
-            Accept Payments
-          </h3>
+          <h3 className="display-block mm text-8xl font-extrabold ">Alisha</h3>
+          <p>
+            I love the simplicity of <br /> the Product.
+          </p>
         </div>
         <div className="sbox ml mt4">
-          <FaUser />
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsjJ4aez3FAgck8X26aINDy5endPII76uDA7z03UbaX_q76-XzsRo0he0e8x8IrhVy0Q4hKbUmeNn4NKfDEP8qMpe8p0J-ippdfK44OliCzg07o1QVyGNY4nYEzcSbysx6DZE38FIJFzZlyEcudn_v-yZkphxb75f6SoBsAVT3FCxW-1agXBrOyviNlGQx/s1600/testi1.png"
+            alt=""
+          />
 
           <h3 className="display-block mm text-8xl font-extrabold ">
-            No App Needed
+            Sam Watson
           </h3>
+          <p>
+            I love the simplicity of <br /> the Product.
+          </p>
         </div>
         <div className="sbox ml mt4">
-          <FaCalendarAlt />
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmIvBJZnTOOGK_0d4k6G6GYnAYu9s501wswBto2bKzMOyevOWRWVySgsE_5UaiUwPPP7f0t7lrSbg6IXu15dUcV2q-bOFeciPetkBT_9_4XrMxernzFnI0q1Sc8-bA6s7TgOJEwLH7po8DlO21NhGq14skXnSTpWSa4JRtjWtS7cNYNKIf4_AQjmwugX6P/s1600/testi.png"
+            alt=""
+          />
 
-          <h3 className="display-block mm text-8xl font-extrabold ">
-            Get Paid Instantly
-          </h3>
+          <h3 className="display-block mm text-8xl font-extrabold ">Alisha</h3>
+          <p>
+            I love the simplicity of <br /> the Product.
+          </p>
         </div>
         <div className="sbox ml mt4">
-          <FaChartLine />
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsjJ4aez3FAgck8X26aINDy5endPII76uDA7z03UbaX_q76-XzsRo0he0e8x8IrhVy0Q4hKbUmeNn4NKfDEP8qMpe8p0J-ippdfK44OliCzg07o1QVyGNY4nYEzcSbysx6DZE38FIJFzZlyEcudn_v-yZkphxb75f6SoBsAVT3FCxW-1agXBrOyviNlGQx/s1600/testi1.png"
+            alt=""
+          />
 
           <h3 className="display-block mm text-8xl font-extrabold ">
-            Track Your Money
+            Sam Watson
           </h3>
+          <p>
+            I love the simplicity of <br /> the Product.
+          </p>
         </div>
       </div>
+      <p className="font-extrabold mt4 text-4xl">
+        Create And Share Your First Payment Link Now.
+      </p>
+      <br />
+      <br />
+      <Link
+        to="/form"
+        className="inline-flex border-2 items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+      >
+        <img
+          src="https://ik.imagekit.io/pngserver/upi-p-logo.png"
+          alt="UPI Icon"
+          className="w-4 h-4 mr-2"
+        />
+        {/* <!-- Replace the CDN link and alt text with your icon URL and description --> */}
+        Generate UPI Link
+      </Link>
     </>
   );
 };
