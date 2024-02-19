@@ -105,12 +105,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
 }
 
 .content {
-    max-width: 600px;
+    max-width: 100vh;
     margin: 0 auto;
     padding: 20px;
     background-color: #f9f9f9;

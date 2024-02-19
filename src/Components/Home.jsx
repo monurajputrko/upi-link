@@ -32,14 +32,13 @@ const Home = () => {
             <div className="flex">
               <Link
                 to="/form"
-                className="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                className="btn inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
               >
                 <img
                   src="https://ik.imagekit.io/pngserver/upi-p-logo.png"
                   alt="UPI Icon"
                   className="w-4 h-4 mr-2"
                 />
-                {/* <!-- Replace the CDN link and alt text with your icon URL and description --> */}
                 Generate UPI Link
               </Link>
             </div>
@@ -170,7 +169,7 @@ const Home = () => {
       <br />
       <Link
         to="/form"
-        className="inline-flex border-2 items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+        className="btn inline-flex border-2 items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
       >
         <img
           src="https://ik.imagekit.io/pngserver/upi-p-logo.png"
@@ -215,7 +214,6 @@ const Home = () => {
           <FaFilePdf className="text-4xl" />
         </a>
       </div>
-      {/* <hr /> */}
       <div className="mt3 flex items-center space-evenly social">
         <a href="https://upilinky.vercel.app/">
           <p>2024 upilinky</p>
