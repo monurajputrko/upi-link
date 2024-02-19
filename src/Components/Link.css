@@ -57,6 +57,64 @@
     font-size: 12px;
 }
 
+.computerprompt {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payingtext {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.vpatext {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mt3{
+    margin-top: 3%;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.pay {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/* Add more styles as needed */
 
 
 /*! CSS Used fontfaces */

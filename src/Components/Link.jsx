@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Context/CreateContext";
 import QRCode from "qrcode.react";
+import './Link.css'
 
 const LinkExtractor = () => {
 const { formData, setFormData } = useContext(AuthContext);
@@ -38,8 +39,8 @@ const { formData, setFormData } = useContext(AuthContext);
   return (
     <div className="flex items-center justify-center">
       <section className="content pay">
-        <p className="computerprompt">
-          Seeing this on PC? Scan QR Code with any UPI App.
+        <p className=" mt3 ">
+          Seeing this on PC? <br /> Scan QR Code with any UPI App.
         </p>
         <div
           style={{
