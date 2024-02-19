@@ -1,8 +1,8 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useState } from "react";
 
 export const AuthContext = createContext();
 
-function AuthContextProvider({ children }) {
+export const AuthContextProvider = ({ children })=> {
   var [recipient, setRecipient] = useState("");
   var [amount, setAmount] = useState("");
   var [link, setLink] = useState("");
@@ -41,4 +41,3 @@ function AuthContextProvider({ children }) {
   );
 }
 
-export default AuthContextProvider;
