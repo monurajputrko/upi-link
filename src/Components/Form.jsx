@@ -27,7 +27,7 @@ export const Form = () => {
               type="text"
               class="form-control"
               name="name"
-              placeholder="Your Name"
+              placeholder="Your Name (Optional)"
               maxlength="50"
               onChange={(e) => {
                 e.preventDefault();
@@ -61,7 +61,7 @@ export const Form = () => {
               type="text"
               class="form-control"
               name="note"
-              placeholder="Note"
+              placeholder="Note  (Optional)"
               onChange={(e) => {
                 e.preventDefault();
                 setFormData({ ...formData, note: e.target.value });
@@ -71,8 +71,8 @@ export const Form = () => {
           </div>
           <button
             onClick={(e) => {
-              e.preventDefault(); 
-              window.location.href = `https://upilinky.vercel.app/pay?pa=${formData.upi}&am=${formData.amount}&se=${formData.name}&no=${formData.note}`;
+              e.preventDefault();
+              window.location.href = `https://upilinky.vercel.app/pay?pa=${formData.upi}&am=${formData.amount}`;
             }}
             className="inline-flex border-2 items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
           >

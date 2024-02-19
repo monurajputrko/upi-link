@@ -214,12 +214,12 @@ const Home = () => {
         <a href="https://monurajputrko.github.io/">
           <FaFilePdf className="text-4xl" />
         </a>
-        {/* <br />
-        <br />
-        <div className="flex items-center space-evenly">
-          <a href="#">Terms</a>
-          <a href="#">Privacy</a>
-        </div> */}
+      </div>
+      {/* <hr /> */}
+      <div className="mt3 flex items-center space-evenly social">
+        <a href="https://upilinky.vercel.app/">
+          <p>2024 upilinky</p>
+        </a>
       </div>
     </>
   );
