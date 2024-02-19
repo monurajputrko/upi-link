@@ -42,7 +42,7 @@ const { formData, setFormData } = useContext(AuthContext);
   return (
     <div>
       <div>
-        upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount}
+        {/* upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount} */}
       </div>
       <section className="content pay">
         <p className="computerprompt">
