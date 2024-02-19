@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext();
 
@@ -7,19 +7,18 @@ export const AuthContextProvider = ({ children })=> {
   var [amount, setAmount] = useState("");
   var [link, setLink] = useState("");
 
-  // useEffect(() => {
-  //   try {
-  //     var urlObject = new URL(window.location.href);
-  //     var urlParams = new URLSearchParams(urlObject.search);
-  //     setRecipient(urlObject.pathname.split("/").pop());
-  //      setAmount(urlParams.get("am"));
+ useEffect(() => {
+   try {
+     var urlObject = new URL(window.location.href);
+     var urlParams = new URLSearchParams(urlObject.search);
+     setRecipient(urlObject.pathname.split("/").pop());
+     setAmount(urlParams.get("am"));
+     setLink(`upi://pay?pa=${recipient}@ybl&pn=Monu&cu=INR&am=${amount}`);
+   } catch (error) {
+     console.error("Error extracting data from URL:", error);
+   }
+ }, [amount,recipient]);
 
-  //     setRecipient(recipient);
-  //     setAmount(amount);
-  //   } catch (error) {
-  //     console.error("Error extracting data from URL:", error);
-  //   }
-  // }, []);
 
   if (
     recipient === null ||
