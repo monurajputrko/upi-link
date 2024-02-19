@@ -34,10 +34,9 @@ const { formData, setFormData } = useContext(AuthContext);
   var [link, setLink] = useState(
     `upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount}`
   );
-  
+
   return (
-    <div>
-      <div>{/* upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount} */}</div>
+    <div className="flex items-center justify-center">
       <section className="content pay">
         <p className="computerprompt">
           Seeing this on PC? Scan QR Code with any UPI App.

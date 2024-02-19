@@ -57,36 +57,7 @@
     font-size: 12px;
 }
 
-.pay .paybutton {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fff), to(#f2f2f2));
-    background: -webkit-linear-gradient(top, #fff 5%, #f2f2f2);
-    background: linear-gradient(180deg, #fff 5%, #f2f2f2);
-    background-color: #fff;
-    border-radius: 8px;
-    border: 2px solid #fff;
-    display: inline-block;
-    cursor: pointer;
-    color: #000;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 10px 57px;
-    text-decoration: none;
-    -webkit-transform: translateY(25px);
-    transform: translateY(25px);
-    margin-bottom: 35px;
-}
 
-.pay .paybutton:hover {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f2f2f2), to(#fff));
-    background: -webkit-linear-gradient(top, #f2f2f2 5%, #fff);
-    background: linear-gradient(180deg, #f2f2f2 5%, #fff);
-    background-color: #f2f2f2;
-}
-
-.pay .paybutton:active {
-    position: relative;
-    top: 1px;
-}
 
 /*! CSS Used fontfaces */
 @font-face {

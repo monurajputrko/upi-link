@@ -1,4 +1,4 @@
-import "./test.css"
+// import "./test.css"
 export const Test = () => {
     
     return (
