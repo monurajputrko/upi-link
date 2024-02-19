@@ -8,7 +8,8 @@ const Home = () => {
         <div className="grid max-w-screen-xl px-4 pt-0 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img
-              src="https://ik.imagekit.io/pngserver/hero.png"
+              style={{ borderRadius: "3%" , marginBottom:"3%" }}
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivcNqCrMXX1-EEd8Jh0P7pjExzrwgVyljPefLTeJmPmgQpn-U6HidyejAzL4lRNRZHaFFkMGZUd_MmUO9mOi00ibLcxQZn_Zz5DVFw_kNdYwMqWm5uppHBPUDp_SpGBz808fQTWjnI1sGhUdC5-lIRPHhp_3aRGy4Ybp20LaQaSvieNoAUq2odVSKmpeAh/s16000/upi%20image.png"
               alt="upi link demo"
             />
           </div>

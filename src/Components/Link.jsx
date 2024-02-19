@@ -3,18 +3,29 @@ import { AuthContext } from "../Context/CreateContext";
 
 const LinkExtractor = () => {
   // const { recipient, amount } = useContext(AuthContext);
-
+  const recipient1 = "ok";
+  const amount1 = "test";
   // Get the URL parameters
   const urlParams = new URLSearchParams(window.location.search);
 
   // Get the recipient UPI ID from the URL parameter 'pa'
-  const recipient = urlParams.get("pa");
-
+  var recipient = urlParams.get("pa");
+  
   // Get the amount from the URL parameter 'am'
-  const amount = urlParams.get("am");
+  var amount = urlParams.get("am");
+ 
 
-  console.log("Recipient:", recipient);
-  console.log("Amount:", amount);
+  if (recipient === "" || recipient === null) {
+    recipient = recipient1;
+  }
+  if (amount === "" || amount === null) {
+    amount = amount1;
+  }
+
+  console.log(recipient);
+   console.log(amount);
+  // console.log("Recipient:", recipient);
+  // console.log("Amount:", amount);
 
   var [link, setLink] = useState(
     `upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount}`
