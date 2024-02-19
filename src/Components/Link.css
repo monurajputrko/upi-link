@@ -1,0 +1,106 @@
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    margin-top: -10px;
+    width: 340px;
+    background: #000000;
+    border-radius: 10px;
+}
+
+.content .center {
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pay {
+    padding: 35px 0;
+    margin-top: 10px;
+}
+
+.pay .qrsvg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6%;
+    width: 210px;
+    height: 210px;
+    padding: 25px;
+    background-color: #fff;
+}
+
+.pay .computerprompt {
+    color: #000;
+    font-size: 6px;
+    font-weight: 700;
+    text-align: center;
+    -webkit-transform: translateY(-22px);
+    transform: translateY(-22px);
+    padding-bottom: 15px;
+}
+
+.pay .payingtext {
+    color: #fff;
+    font-family: Krona One;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.pay .vpatext {
+    font-size: 12px;
+}
+
+.pay .paybutton {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fff), to(#f2f2f2));
+    background: -webkit-linear-gradient(top, #fff 5%, #f2f2f2);
+    background: linear-gradient(180deg, #fff 5%, #f2f2f2);
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    display: inline-block;
+    cursor: pointer;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 57px;
+    text-decoration: none;
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
+    margin-bottom: 35px;
+}
+
+.pay .paybutton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f2f2f2), to(#fff));
+    background: -webkit-linear-gradient(top, #f2f2f2 5%, #fff);
+    background: linear-gradient(180deg, #f2f2f2 5%, #fff);
+    background-color: #f2f2f2;
+}
+
+.pay .paybutton:active {
+    position: relative;
+    top: 1px;
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: 'Krona One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/kronaone/v14/jAnEgHdjHcjgfIb1ZcUyOIWg7cU.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Krona One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/kronaone/v14/jAnEgHdjHcjgfIb1ZcUyNoWg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
