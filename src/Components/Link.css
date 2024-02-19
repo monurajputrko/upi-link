@@ -111,6 +111,9 @@ body {
 .vh100{
     margin-top: 6%;
     width: 100vh;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .content {
