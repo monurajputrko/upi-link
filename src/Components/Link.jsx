@@ -51,7 +51,7 @@ const { formData, setFormData } = useContext(AuthContext);
         <p className="payingtext">You are paying ₹ {amount}</p>
         <p className="payingtext">to</p>
         <p className="payingtext vpatext">{recipient}</p>
-        <QRCode value={link} />
+        <QRCode value={link} size={256} />
         <div className="center">
           <a href={link} target="_blank" rel="noopener noreferrer">
             Go to External Website
