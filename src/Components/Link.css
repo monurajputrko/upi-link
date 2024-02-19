@@ -32,7 +32,7 @@
     width: 210px;
     height: 210px;
     padding: 25px;
-    background-color: #fff;
+    background-color: #b7b7b7;
 }
 
 .pay .computerprompt {
@@ -45,8 +45,12 @@
     padding-bottom: 15px;
 }
 
+.btn{
+    border: 2px solid black;
+}
+
 .pay .payingtext {
-    color: #fff;
+    color: #000000;
     font-family: Krona One;
     font-size: 16px;
     text-align: center;
