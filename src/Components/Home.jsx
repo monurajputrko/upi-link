@@ -1,14 +1,14 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
 import { FaRegCreditCard } from "react-icons/fa6";
-import { FaUser } from "react-icons/fa";
-import { FaCalendarAlt } from "react-icons/fa";
-import { FaChartLine } from "react-icons/fa6";
+import { FaUser, FaCalendarAlt, FaFilePdf } from "react-icons/fa";
+import { FaChartLine, FaSquareGithub } from "react-icons/fa6";
+import { RiLinkedinBoxLine } from "react-icons/ri";
 
 const Home = () => {
   return (
     <>
-      <div className="grid max-w-screen-xl px-4 pt-0 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+      <div className="grid max-w-screen-xl px-4 pt-0 mt2 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
           {/* https://ik.imagekit.io/pngserver/hero.png */}
           <img
@@ -180,6 +180,47 @@ const Home = () => {
         {/* <!-- Replace the CDN link and alt text with your icon URL and description --> */}
         Generate UPI Link
       </Link>
+      <br />
+      <br />
+      <div className="mt3">
+        <div className="flex items-center space-evenly">
+          <a href="#" className="font-extrabold">
+            About us
+          </a>
+          <a href="#" className="font-extrabold">
+            Contact us
+          </a>
+        </div>
+        <br />
+        <br />
+        <div className="flex items-center space-evenly">
+          <a href="#" className="font-extrabold">
+            Terms
+          </a>
+          <a href="#" className="font-extrabold">
+            Privacy
+          </a>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div className="mt3 flex items-center space-evenly social">
+        <a href="https://www.linkedin.com/in/monurajputrko/">
+          <RiLinkedinBoxLine className="text-4xl" />
+        </a>
+        <a href="https://github.com/monurajputrko">
+          <FaSquareGithub className="text-4xl" />
+        </a>
+        <a href="https://monurajputrko.github.io/">
+          <FaFilePdf className="text-4xl" />
+        </a>
+        {/* <br />
+        <br />
+        <div className="flex items-center space-evenly">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+        </div> */}
+      </div>
     </>
   );
 };

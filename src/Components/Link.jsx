@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Context/CreateContext";
+import QRCode from "qrcode.react";
 
 const LinkExtractor = () => {
 const { formData, setFormData } = useContext(AuthContext);
@@ -50,6 +51,7 @@ const { formData, setFormData } = useContext(AuthContext);
         <p className="payingtext">You are paying ₹ {amount}</p>
         <p className="payingtext">to</p>
         <p className="payingtext vpatext">{recipient}</p>
+        <QRCode value={link} />
         <div className="center">
           <a href={link} target="_blank" rel="noopener noreferrer">
             Go to External Website
