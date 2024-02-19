@@ -17,14 +17,14 @@ const LinkExtractor = () => {
   console.log("Amount:", amount);
 
   var [link, setLink] = useState(
-    `upi://pay?pa=${recipient}@ybl&pn=Monu&cu=INR&am=${amount}`
+    `upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount}`
   );
   // console.log(link);
   // const link = "";
   return (
     <div>
       <div>
-        upi://pay?pa=${recipient}@ybl&pn=Monu&cu=INR&am=${amount}
+        upi://pay?pa=${recipient}&pn=Monu&cu=INR&am=${amount}
       </div>
       <section className="content pay">
         <p className="computerprompt">
